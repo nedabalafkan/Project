@@ -12,25 +12,39 @@
   </div>
 
   <div class="links">
-    <a href="nsclc.html">Non-small cell</a>
-    <a href="sclc.html">Small cell</a>
-    <a href="about.html">About</a>
+    <a href="nsclc.html">Non-small cell lung cancer</a>
+    <a href="sclc.html">Small cell lung cancer</a>
+    <a href="about.html">About this website</a>
     <a href="resources.html">Other resources</a>
     <a href="contact.html">Contact us</a>
   </div>
 
   <div>
-    <p>This website has been created for people with lung cancer who would like to know more about their pathology.</p>
+    <p>This website has been created for people with lung cancer who would like
+      to know more about their pathology. Please click on the diagnosis for
+      more information.</p>
 
     <table>
       <tr>
         <td id="nsclc">
-          <p>Non-small cell lung cancer</p>
+          <p>Non-small cell lung cancer<br>
+            <a href="nsclc.html">
+              <small>Click here to find out more about the pathlology
+              of non-small cell lung cancer
+              </small>
+            </a>
+          </p>
         </td>
         <td>
         </td>
-        <td id="sclc">
-          <p>Small cell lung cancer</p>
+        <<td id="sclc">
+          <p>Small cell lung cancer<br>
+            <a href="sclc.html">
+              <small>Click here to find out more about the pathlology
+              of small cell lung cancer
+              </small>
+            </a>
+          </p>
         </td>
       </tr>
     </table>
@@ -39,6 +53,12 @@
   <div class = "foot">
       Copyright 2018
   </div>
+
+  <script>
+  $('td').on('click', function() {
+    $(this).toggleClass('show-description');
+  });
+  </script>
 
 </body>
 

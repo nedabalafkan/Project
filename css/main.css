@@ -44,6 +44,14 @@ td p {
   height: 30px;
   padding: 10px;
   line-height: 30px;
+  text-align: left;
+  transition: height .5s;
+  -webkit-transition: height .5s;
+  -moz-transition: height .5s;
+}
+
+small {
+  opacity: 0;
 }
 
 #form {
@@ -80,6 +88,14 @@ td p {
   width: 45%
 }
 
+.show-description p {
+  height: 100px;
+}
+
+.show-description small {
+  opacity: 1;
+}
+
 .foot {
   height: 30px;
   width: 100%;
@@ -112,14 +128,18 @@ a:visited {
   color:gray;
 }
 
-td {
-  background-image:
+td a {
+  text-decoration: none;
 }
 
-/*.show-description p {
-  height: 100px;
+td a:link {
+  color: white;
 }
 
-.show-description small {
-  opacity: 1;
-}*/
+td a:hover {
+  color: white;
+}
+
+td a:visited {
+  color: white;
+}
