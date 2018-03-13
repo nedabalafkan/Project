@@ -1,7 +1,6 @@
 .title {
- /*background-image: url("../images/title.jpg");*/
- background-size: cover;
  background-color: #520868;
+ width: 100%;
  height: 100px;
  margin: auto;
  font-size: 60px;
@@ -16,31 +15,103 @@
   background-size: cover;
   background-color: black;
   height: 30px;
+  width: 100%;
   line-height: 30px;
-  /*font-weight: bold;*/
   font-family: sans-serif;
   text-align: center;
 }
 
-.purpose {
+p {
   font-family:sans-serif;
+  padding-left: 30px;
+  padding-top: 30px;
 }
 
-.purpose p {
-  padding: 30px;
-}
-
-.nav {
+table {
   margin: 0 auto;
-  width: 1000px;
-  padding-bottom: 100px;
+  padding: 30px;
+  width: 75%;
+  text-align: center;
 }
 
-.nav img {
-  height: 200px;
-  width: 400px;
+td {
+  height: 300px;
+  font-family: sans-serif;
+}
+
+td p {
+  color: rgba(255,255,255,1);
+  background: rgba(50,16,156,0.5);
+  height: 30px;
+  padding: 10px;
+  line-height: 30px;
+  text-align: left;
+  transition: height .5s;
+  -webkit-transition: height .5s;
+  -moz-transition: height .5s;
+}
+
+.resource {
+  width: 50%;
+  height: 100px;
+}
+
+small {
+  opacity: 0;
+}
+
+#form {
+  padding: 30px;
+  font-family:sans-serif;
+  line-height: 30px;
+}
+
+#nav {
+  width: 100%;
+  height: 400px;
+  padding: 50px;
+  text-align: center;
+}
+
+#nav div {
+  height: 100%;
+  width: 50%;
+  position: relative;
+  margin: 0 auto;
   display: inline;
-  opacity: 0.6;
+  padding: 50px;
+}
+
+#nsclc {
+  background-image: url("../images/scc.jpg");
+  background-size: cover;
+  width: 45%;
+}
+
+#sclc {
+  background-image: url("../images/sclc.jpg");
+  background-size: cover;
+  width: 45%
+}
+
+#scc {
+  background-image: url("../images/scc.jpg");
+  background-size: cover;
+  width: 45%
+}
+
+#adeno {
+  background-image: url("../images/adeno.jpg");
+  background-size: cover;
+  width: 45%
+}
+
+.show-description p {
+  height: 100px;
+}
+
+.show-description small {
+  opacity: 1;
 }
 
 .foot {
@@ -57,16 +128,37 @@
   padding-left: 30px;
 }
 
-a {
+.links a {
   padding-left: 30px;
   padding-right: 30px;
   text-decoration: none;
 }
 
-a:link {
+.links a:link {
   color: gray;
 }
 
-a:hover {
-  font-weight: bold;
+.links a:hover {
+  color: white;
+}
+
+.links a:visited {
+  color:gray;
+}
+
+a {
+  text-decoration: none;
+  color: gray;
+}
+
+td a:link {
+  color: white;
+}
+
+td a:hover {
+  color: white;
+}
+
+td a:visited {
+  color: white;
 }
