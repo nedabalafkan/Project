@@ -36,6 +36,7 @@ table {
 
 td {
   height: 300px;
+  font-family: sans-serif;
 }
 
 td p {
@@ -48,6 +49,11 @@ td p {
   transition: height .5s;
   -webkit-transition: height .5s;
   -moz-transition: height .5s;
+}
+
+.resource {
+  width: 50%;
+  height: 100px;
 }
 
 small {
@@ -88,6 +94,18 @@ small {
   width: 45%
 }
 
+#scc {
+  background-image: url("../images/scc.jpg");
+  background-size: cover;
+  width: 45%
+}
+
+#adeno {
+  background-image: url("../images/adeno.jpg");
+  background-size: cover;
+  width: 45%
+}
+
 .show-description p {
   height: 100px;
 }
@@ -116,20 +134,21 @@ small {
   text-decoration: none;
 }
 
-a:link {
+.links a:link {
   color: gray;
 }
 
-a:hover {
+.links a:hover {
   color: white;
 }
 
-a:visited {
+.links a:visited {
   color:gray;
 }
 
-td a {
+a {
   text-decoration: none;
+  color: gray;
 }
 
 td a:link {
